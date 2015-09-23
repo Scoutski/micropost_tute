@@ -39,4 +39,8 @@ module SessionsHelper
     !current_user.nil?
     # returns true if current user exists.
   end
+
+  def current_user? user
+    user == current_user
+  end
 end
