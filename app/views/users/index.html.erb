@@ -1,0 +1,11 @@
+<% provide(:title, 'All users') %>
+<h1>All users</h1>
+
+<%= will_paginate %>
+
+<ul class="users">
+    <%= render @users %>
+    <!-- Rails knows to do an each loop and render the _user partial for each user. -->
+</ul>
+
+<%= will_paginate %>
